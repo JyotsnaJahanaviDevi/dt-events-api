@@ -1,7 +1,7 @@
 text
 # DT Events API
 
-A RESTful API for managing events, built with Node.js, Express, and MongoDB as part of the DeepThought internship selection process.
+A RESTful API for managing events, built with Node.js, Express, and MongoDB.
 
 ## 🚀 Features
 
