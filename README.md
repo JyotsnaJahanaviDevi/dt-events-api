@@ -29,44 +29,31 @@ A RESTful API for managing events, built with Node.js, Express, and MongoDB.
 ## ⚙️ Installation
 
 1. **Clone the repository**
-git clone https://github.com/YOUR_USERNAME/dt-events-api.git
+git clone <repo_url>
 cd dt-events-api
-
-text
 
 2. **Install dependencies**
 npm install
 
-text
 
 3. **Create `.env` file** in the root directory
 MONGODB_URI=your_mongodb_connection_string
 PORT=3000
 
-text
-
 4. **Create uploads folder**
 mkdir uploads
 
-text
-
 5. **Start the server**
 node index.js
-
-text
 
 You should see:
 Connected to MongoDB
 Server running on http://localhost:3000
 
-text
-
 ## 📡 API Endpoints
 
 ### Base URL
 http://localhost:3000/api/v3/app
-
-text
 
 ### 1. Create Event
 **POST** `/events`
@@ -89,8 +76,6 @@ text
 {
 "id": "675abc123def456"
 }
-
-text
 
 ---
 
@@ -123,8 +108,6 @@ text
 }
 ]
 
-text
-
 ---
 
 ### 3. Get Event by ID
@@ -152,8 +135,6 @@ text
 "attendees": []
 }
 
-text
-
 ---
 
 ### 4. Update Event
@@ -170,8 +151,6 @@ text
 "message": "Event updated successfully"
 }
 
-text
-
 ---
 
 ### 5. Delete Event
@@ -181,8 +160,6 @@ text
 {
 "message": "Event deleted successfully"
 }
-
-text
 
 ## 📂 Project Structure
 
@@ -196,8 +173,6 @@ dt-events-api/
 ├── index.js # Main server file
 ├── package.json # Project dependencies
 └── README.md # Project documentation
-
-text
 
 ## 🗄️ Data Model
 
@@ -219,16 +194,12 @@ rigor_rank: Number, // Event difficulty/rigor level
 attendees: [Number] // Array of user IDs attending
 }
 
-text
-
 ## 🔒 Environment Variables
 
 Create a `.env` file with the following:
 
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/?retryWrites=true&w=majority
 PORT=3000
-
-text
 
 ## 🧪 Testing
 
@@ -246,11 +217,3 @@ Use **Postman** to test all endpoints:
 - **File Uploads**: Multer handles multipart/form-data
 - **ObjectId**: MongoDB `_id` is used as unique identifier
 - **Error Handling**: Proper error responses for all endpoints
-
-## 👨‍💻 Author
-
-Created as part of DeepThought (DT) Internship Selection Process - Task 1
-
-## 📄 License
-
-This project is created for educational purposes as part of an internship assessment.
